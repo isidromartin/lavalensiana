@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,24 +50,59 @@ const Navbar = () => {
           }`}
         >
           <li>
-            <a href="#about" className="hover:text-primary transition">
+            <Link
+              to="about"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="cursor-pointer hover:text-primary transition"
+            >
               Sobre Nosotros
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#menu" className="hover:text-primary transition">
+            <Link
+              to="menu"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="cursor-pointer hover:text-primary transition"
+            >
               Carta
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#catering" className="hover:text-primary transition">
+            <Link
+              to="catering"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="cursor-pointer hover:text-primary transition"
+            >
               Catering
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="hover:text-primary transition">
+            <Link
+              to="testimonials"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="cursor-pointer hover:text-primary transition"
+            >
+              Testimonios
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="contacto"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="cursor-pointer hover:text-primary transition"
+            >
               Contacto
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -89,34 +125,56 @@ const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <a
-            href="#about"
-            className="text-black text-xl"
+          <Link
+            to="about"
+            smooth={true}
+            duration={800}
+            offset={-80}
+            className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
           >
             Sobre Nosotros
-          </a>
-          <a
-            href="#menu"
-            className="text-black text-xl"
+          </Link>
+          <Link
+            to="menu"
+            smooth={true}
+            duration={800}
+            offset={-80}
+            className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
           >
             Carta
-          </a>
-          <a
-            href="#catering"
-            className="text-black text-xl"
+          </Link>
+          <Link
+            to="catering"
+            smooth={true}
+            duration={800}
+            offset={-80}
+            className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
           >
             Catering
-          </a>
-          <a
-            href="#contact"
-            className="text-black text-xl"
+          </Link>
+          <Link
+            to="testimonials"
+            smooth={true}
+            duration={800}
+            offset={-80}
+            className="text-black text-xl cursor-pointer"
+            onClick={() => setIsOpen(false)}
+          >
+            Testimonios
+          </Link>
+          <Link
+            to="contacto"
+            smooth={true}
+            duration={800}
+            offset={-80}
+            className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
           >
             Contacto
-          </a>
+          </Link>
         </motion.div>
       )}
     </motion.nav>

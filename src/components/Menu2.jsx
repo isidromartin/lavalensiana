@@ -128,7 +128,7 @@ const Menu = () => {
 
                 {/* Ingredientes */}
                 <motion.p
-                  className="mt-4 text-2xl sm:text-3xl font-body italic"
+                  className="my-4 text-2xl sm:text-3xl font-body italic"
                   initial={{ opacity: 0, translateY: 10 }}
                   whileInView={{ opacity: 1, translateY: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
@@ -136,7 +136,7 @@ const Menu = () => {
                   - Ingredientes -
                 </motion.p>
                 <motion.ul
-                  className="text-lg sm:text-xl font-body italic space-y-1"
+                  className="my-4 text-lg sm:text-xl font-body italic space-y-1"
                   initial={{ opacity: 0, translateY: 10 }}
                   whileInView={{ opacity: 1, translateY: 0 }}
                   transition={{ duration: 0.8, delay: 0.7 }}
@@ -153,16 +153,6 @@ const Menu = () => {
                   whileInView={{ scaleX: 1 }}
                   transition={{ duration: 0.6, delay: 0.8 }}
                 />
-
-                {/* Ubicación y Fecha */}
-                <motion.p
-                  className="mt-4 text-lg text-gray-300 italic"
-                  initial={{ opacity: 0, translateY: 10 }}
-                  whileInView={{ opacity: 1, translateY: 0 }}
-                  transition={{ duration: 0.8, delay: 0.9 }}
-                >
-                  {item.location} - {item.date}
-                </motion.p>
               </div>
             </motion.div>
           ))}
