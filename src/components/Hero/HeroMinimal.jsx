@@ -50,6 +50,7 @@ const HeroMinimal = () => {
         autoPlay
         loop
         muted
+        playsInline
         className="absolute inset-0 w-full h-full object-cover"
         style={{ y: useTransform(scrollY, [0, 300], [0, 30]) }} // Parallax en el video
       >
