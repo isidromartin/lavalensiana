@@ -13,12 +13,12 @@ const Catering = () => {
           viewport={{ once: true }}
         >
           <img
-            src="/images/catering.jpg"
+            src="images/catering.jpg"
             alt="Catering y Eventos"
             className="w-2/3 md:w-3/4 rounded-lg shadow-xl rotate-[6deg] absolute top-6 left-6 hover:scale-105 transition-transform duration-300"
           />
           <img
-            src="/images/catering.jpg"
+            src="images/catering.jpg"
             alt="Catering y Eventos"
             className="w-2/3 md:w-3/4 rounded-lg shadow-xl rotate-[-6deg] hover:scale-105 transition-transform duration-300"
           />

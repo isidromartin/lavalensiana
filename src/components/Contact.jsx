@@ -105,7 +105,9 @@ const Contacto = () => {
 
           <form className="space-y-6" ref={form} onSubmit={sendEmail}>
             <div>
-              <label className="block text-gray-700 font-medium">Nombre</label>
+              <label className="block text-gray-700 font-medium">
+                Nombre *
+              </label>
               <input
                 required
                 type="text"
@@ -117,7 +119,7 @@ const Contacto = () => {
 
             <div>
               <label className="block text-gray-700 font-medium">
-                Correo Electrónico
+                Correo Electrónico *
               </label>
               <input
                 required
@@ -129,7 +131,9 @@ const Contacto = () => {
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium">Mensaje</label>
+              <label className="block text-gray-700 font-medium">
+                Mensaje *
+              </label>
               <textarea
                 required
                 name="message"

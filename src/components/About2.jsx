@@ -14,14 +14,14 @@ const About2 = () => {
         >
           {/* Imagen Inferior */}
           <img
-            src="/images/sobre-nosotros.jpg"
+            src="images/sobre-nosotros.jpg"
             alt="Panadería Artesanal"
             className="w-2/3 md:w-3/4 rounded-lg shadow-xl rotate-[6deg] absolute top-6 left-6 hover:scale-105 transition-transform duration-300"
           />
 
           {/* Imagen Superior */}
           <img
-            src="/images/suelta.jpg"
+            src="images/suelta.jpg"
             alt="Chefs Cocinando"
             className="w-2/3 md:w-3/4 rounded-lg shadow-xl rotate-[-6deg] hover:scale-105 transition-transform duration-300"
           />

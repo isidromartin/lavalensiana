@@ -35,9 +35,7 @@ const Navbar = () => {
         {/* Logo cambia según el scroll */}
         <a href="/" className="flex items-center space-x-2">
           <img
-            src={
-              scrolled ? "/images/logo_negro.svg" : "/images/logo_blanco.svg"
-            }
+            src={scrolled ? "images/logo_negro.svg" : "images/logo_blanco.svg"}
             alt=""
             className="h-8 md:h-10 transition-all duration-300 ml-4 scale-90"
           />

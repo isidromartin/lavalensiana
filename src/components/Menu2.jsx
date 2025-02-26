@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const menuItems = [
   {
     name: "Paella Valenciana",
-    image: "/images/paella4.jpg",
+    image: "images/paella4.jpg",
     ingredients: [
       "Conejo",
       "Pollo",
@@ -17,14 +17,14 @@ const menuItems = [
   },
   {
     name: "Arroz Negro",
-    image: "/images/paella3.jpg",
+    image: "images/paella3.jpg",
     ingredients: ["Sepia en su tinta", "Tacos de merluza", "Puntos de alioli"],
     location: "Costa Blanca",
     date: "08/05/24",
   },
   {
     name: "Arroz Pedro Ximénez",
-    image: "/images/paella2.jpg",
+    image: "images/paella2.jpg",
     ingredients: [
       "Contramuslo de pollo",
       "Costilla de cerdo",
@@ -36,7 +36,7 @@ const menuItems = [
   },
   {
     name: "Arroz Imperial",
-    image: "/images/paella1.jpg",
+    image: "images/paella1.jpg",
     ingredients: [
       "Secreto ibérico",
       "Panceta",
@@ -49,14 +49,14 @@ const menuItems = [
   },
   {
     name: "Arroz Mediterráneo",
-    image: "/images/paella3.jpg",
+    image: "images/paella3.jpg",
     ingredients: ["Fumet de pescado", "Galeras", "Chipirones", "Alcachofa"],
     location: "Catering Gourmet",
     date: "12/06/24",
   },
   {
     name: "Arroz Mar y Fuego",
-    image: "/images/paella3.jpg",
+    image: "images/paella3.jpg",
     ingredients: ["Pulpo", "Sepia", "Emperador", "Sobrasada ibérica"],
     location: "Catering - Valencia",
     date: "10/03/24",

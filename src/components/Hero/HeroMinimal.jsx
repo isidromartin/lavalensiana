@@ -53,7 +53,7 @@ const HeroMinimal = () => {
         className="absolute inset-0 w-full h-full object-cover"
         style={{ y: useTransform(scrollY, [0, 300], [0, 30]) }} // Parallax en el video
       >
-        <source src="/images/hero2.mp4" type="video/mp4" />
+        <source src="images/hero2.mp4" type="video/mp4" />
       </motion.video>
 
       {/* Capa oscura semitransparente para mejorar visibilidad */}
@@ -68,7 +68,7 @@ const HeroMinimal = () => {
           La Valensiana
         </motion.h1> */}
         <motion.img
-          src="/images/logo_blanco.svg"
+          src="images/logo_blanco.svg"
           alt="La Valensiana Logo"
           className="w-72 sm:w-80 md:w-[30rem] lg:w-[36rem] xl:w-[40rem] 2xl:w-[48rem] mx-auto drop-shadow-2xl"
           style={{ y: parallaxText }}

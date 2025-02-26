@@ -13,7 +13,7 @@ const About = () => {
           style={{ y: parallaxImage }}
         >
           <img
-            src="/images/sobre-nosotros.jpg"
+            src="images/sobre-nosotros.jpg"
             alt="Sobre Nosotros"
             className="rounded-lg shadow-lg w-full max-w-lg object-cover"
           />

@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Primera fila */}
         <div className="col-span-1 flex justify-center md:justify-start">
           <img
-            src="/images/logo_blanco.svg"
+            src="images/logo_blanco.svg"
             alt="Logo La Valensiana"
             className="h-16 md:h-10 transition-all duration-300 ml-4"
           />
