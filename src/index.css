@@ -5,3 +5,12 @@
 body {
   background-color: #f8f1e5;
 }
+
+html {
+  font-size: 80%;
+  font-family: "Tinos", "serif";
+}
+
+.kaushan {
+  font-family: "Kaushan Script", serif;
+}

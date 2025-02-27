@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         heading: ["Playfair Display", "serif"],
-        body: ["Poppins", "sans-serif"],
+        body: ["Tinos", "serif"],
       },
     },
   },

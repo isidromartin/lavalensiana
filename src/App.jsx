@@ -7,8 +7,9 @@ import HeroMinimal from "./components/Hero/HeroMinimal";
 // import HeroModern from "./components/Hero/HeroModern";
 import About from "./components/About";
 import About2 from "./components/About2";
-import Menu from "./components/Menu";
-import Menu2 from "./components/Menu2";
+import Menu from "./components/Menu/Menu";
+import Menu2 from "./components/Menu/Menu2";
+import MenuSection from "./components/Menu/MenuSection";
 import Catering from "./components/Catering";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -58,8 +59,9 @@ function App() {
           <div className="border-t border-gray-400 w-1/4"></div>
         </div>
         <section id="menu">
-          <Menu />
-          <Menu2 />
+          {/* <Menu />
+          <Menu2 /> */}
+          <MenuSection />
         </section>
         <div className="absolute w-full flex items-center justify-center z-40">
           <div className="border-t border-gray-400 w-1/4"></div>

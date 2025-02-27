@@ -47,14 +47,14 @@ const Contacto = () => {
           <h2 className="text-5xl sm:text-6xl font-heading font-bold text-gray-900">
             Contacto
           </h2>
-          <div className="w-32 h-1 bg-primary ml-0 mt-3"></div>
+          <div className="w-32 h-1 bg-primary mx-auto md:ml-0 mt-3"></div>
 
           <p className="text-lg text-gray-700 leading-relaxed">
             Para consultas, reservas y eventos, contáctanos a través de nuestros
             canales:
           </p>
 
-          <div className="space-y-4 text-lg">
+          <div className="space-y-4 text-xl">
             <div className="flex items-center justify-center md:justify-start space-x-4">
               <FaEnvelope className="text-primary text-2xl" />
               <a
@@ -149,7 +149,7 @@ const Contacto = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              Enviar Mensaje →
+              Enviar Mensaje
             </motion.button>
           </form>
         </motion.div>
