@@ -33,9 +33,10 @@ const MenuSection = () => {
   return (
     <section id="menu" className="py-20 bg-[#F8F1E5]">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-heading font-bold text-gray-900 mb-6">
+        <h2 className="text-5xl sm:text-6xl font-heading font-bold text-gray-900">
           Nuestra Carta
         </h2>
+        <div className="w-32 h-1 bg-primary mx-auto mt-3 mb-12"></div>
 
         {/* Botones de Filtro */}
         <div className="mb-8 flex flex-wrap justify-center gap-4">

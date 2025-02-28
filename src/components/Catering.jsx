@@ -35,7 +35,7 @@ const Catering = () => {
           <h2 className="text-5xl sm:text-6xl font-heading font-bold text-gray-900">
             Catering & Eventos
           </h2>
-          <div className="w-16 h-1 bg-primary mx-auto md:mx-0 mt-3"></div>
+          <div className="w-32 h-1 bg-primary mx-auto md:mx-0 mt-3"></div>
 
           <p className="text-lg sm:text-xl font-body text-gray-700 leading-relaxed mt-6">
             En <span className="font-bold">La Valensiana</span>, llevamos

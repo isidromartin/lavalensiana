@@ -35,10 +35,10 @@ const About2 = () => {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl sm:text-5xl font-heading font-bold text-gray-900">
+          <h2 className="text-5xl sm:text-6xl font-heading font-bold text-gray-900">
             Nuestra Historia
           </h2>
-          <div className="w-16 h-1 bg-primary mx-auto md:mx-0 mt-3"></div>
+          <div className="w-32 h-1 bg-primary mx-auto md:mx-0 mt-3"></div>
 
           <p className="text-lg sm:text-xl font-body text-gray-700 leading-relaxed mt-6">
             En La Valensiana, honramos la tradición culinaria valenciana
@@ -48,7 +48,7 @@ const About2 = () => {
           </p>
 
           {/* Firma */}
-          <p className="text-2xl font-heading font-semibold italic text-gray-800 mt-6">
+          <p className="kaushan text-3xl font-heading font-semibold italic text-gray-800 mt-6">
             - Equipo La Valensiana
           </p>
         </motion.div>
