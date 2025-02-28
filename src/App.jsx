@@ -58,7 +58,7 @@ function App() {
             <div className="absolute w-full flex items-center justify-center z-40">
               <div className="border-t border-gray-400 w-1/4"></div>
               <img
-                src="images/lgR.png"
+                src="images/lgR.webp"
                 alt="Logo Divisor"
                 className="h-12 mx-4 bg-transparent"
               />
@@ -74,7 +74,7 @@ function App() {
             <div className="absolute w-full flex items-center justify-center z-40">
               <div className="border-t border-gray-400 w-1/4"></div>
               <img
-                src="images/lgR.png"
+                src="images/lgR.webp"
                 alt="Logo Divisor"
                 className="h-12 mx-4 bg-transparent"
               />
@@ -90,7 +90,7 @@ function App() {
             <div className="absolute w-full flex items-center justify-center z-40">
               <div className="border-t border-gray-400 w-1/4"></div>
               <img
-                src="images/lgR.png"
+                src="images/lgR.webp"
                 alt="Logo Divisor"
                 className="h-12 mx-4 bg-transparent"
               />
@@ -106,7 +106,7 @@ function App() {
             <div className="absolute w-full flex items-center justify-center z-40">
               <div className="border-t border-gray-400 w-1/4"></div>
               <img
-                src="images/lgR.png"
+                src="images/lgR.webp"
                 alt="Logo Divisor"
                 className="h-12 mx-4 bg-transparent"
               />

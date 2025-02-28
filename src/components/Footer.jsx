@@ -74,6 +74,8 @@ const Footer = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#about"
             >
               Sobre Nosotros
             </Link>
@@ -85,6 +87,8 @@ const Footer = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#menu"
             >
               Carta
             </Link>
@@ -96,6 +100,8 @@ const Footer = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#catering"
             >
               Catering
             </Link>
@@ -107,6 +113,8 @@ const Footer = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#testimonials"
             >
               Testimonios
             </Link>
@@ -118,6 +126,8 @@ const Footer = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#contacto"
             >
               Contacto
             </Link>

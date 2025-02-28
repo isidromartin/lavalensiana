@@ -54,6 +54,8 @@ const Navbar = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#about"
             >
               Sobre Nosotros
             </Link>
@@ -65,6 +67,8 @@ const Navbar = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#menu"
             >
               Carta
             </Link>
@@ -76,6 +80,8 @@ const Navbar = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#catering"
             >
               Catering
             </Link>
@@ -87,6 +93,8 @@ const Navbar = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#testimonials"
             >
               Testimonios
             </Link>
@@ -98,6 +106,8 @@ const Navbar = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer hover:text-primary transition"
+              as="a"
+              href="/#contacto"
             >
               Contacto
             </Link>
@@ -130,6 +140,8 @@ const Navbar = () => {
             offset={-80}
             className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
+            as="a"
+            href="/#about"
           >
             Sobre Nosotros
           </Link>
@@ -140,6 +152,8 @@ const Navbar = () => {
             offset={-80}
             className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
+            as="a"
+            href="/#menu"
           >
             Carta
           </Link>
@@ -150,6 +164,8 @@ const Navbar = () => {
             offset={-80}
             className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
+            as="a"
+            href="/#catering"
           >
             Catering
           </Link>
@@ -160,6 +176,8 @@ const Navbar = () => {
             offset={-80}
             className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
+            as="a"
+            href="/#testimonials"
           >
             Testimonios
           </Link>
@@ -170,6 +188,8 @@ const Navbar = () => {
             offset={-80}
             className="text-black text-xl cursor-pointer"
             onClick={() => setIsOpen(false)}
+            as="a"
+            href="/#contacto"
           >
             Contacto
           </Link>

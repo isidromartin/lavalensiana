@@ -68,6 +68,8 @@ const Catering = () => {
               duration={800}
               offset={-80}
               className="cursor-pointer text-gray-800 hover:text-text-gray-800 transition"
+              as="a"
+              href="/#contacto"
             >
               Solicita Información
             </Link>
