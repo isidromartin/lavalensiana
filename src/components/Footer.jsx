@@ -3,46 +3,41 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E1E1E] text-white py-20 px-6">
-      <div className="container mx-auto grid grid-cols-3 gap-12">
-        {/* Primera fila */}
-        <div className="col-span-1 flex justify-center md:justify-start">
+    <footer className="bg-[#1E1E1E] text-white py-16 px-6">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+        {/* Columna 1: Logo */}
+        <div className="flex justify-center md:justify-start">
           <img
             src="images/logo_blanco.svg"
             alt="Logo La Valensiana"
-            className="h-16 md:h-10 transition-all duration-300 ml-4"
+            className="h-16 md:h-12 transition-all duration-300"
           />
         </div>
-        <div className="col-span-1"></div> {/* Espacio vacío */}
-        <div className="col-span-1"></div> {/* Espacio vacío */}
-        {/* Segunda fila */}
-        <div className="col-span-1">
-          <p className="text-lg text-gray-400 leading-relaxed">
-            "Cocinamos con pasión, servimos con amor."
-          </p>
-        </div>
-        <div className="col-span-1">
+
+        {/* Columna 2: Sobre Nosotros */}
+        <div>
           <h3 className="text-2xl font-heading font-bold">Sobre Nosotros</h3>
           <p className="text-lg text-gray-400 mt-4 leading-relaxed">
             Catering especializado en paellas y arroces tradicionales,
             fusionando calidad y pasión en cada evento.
           </p>
         </div>
-        <div className="col-span-1 flex flex-col items-center space-y-4">
+
+        {/* Columna 3: Redes Sociales */}
+        <div className="flex flex-col items-center md:items-start space-y-4">
           <h3 className="text-2xl font-heading font-bold">Síguenos</h3>
           <div className="flex space-x-6 text-3xl">
-            <FaInstagram className="hover:text-primary cursor-pointer" />
-            <FaWhatsapp className="hover:text-primary cursor-pointer" />
-            <FaEnvelope className="hover:text-primary cursor-pointer" />
+            <FaInstagram className="hover:text-primary cursor-pointer transition-transform duration-300 hover:scale-110" />
+            <FaWhatsapp className="hover:text-primary cursor-pointer transition-transform duration-300 hover:scale-110" />
+            <FaEnvelope className="hover:text-primary cursor-pointer transition-transform duration-300 hover:scale-110" />
           </div>
         </div>
       </div>
 
-      {/* Fila extra: Navegación */}
-      <div className="border-t border-gray-600 mt-12 pt-6 text-center text-gray-400 text-sm flex justify-center space-x-6">
-        <ul
-          className={`hidden md:flex space-x-6 text-lg transition-all duration-300`}
-        >
+      {/* Separador */}
+      <div className="border-t border-gray-600 mt-12 pt-6">
+        {/* Menú de Navegación */}
+        <ul className="flex flex-wrap justify-center space-x-6 text-lg text-gray-400">
           <li>
             <Link
               to="about"
@@ -102,7 +97,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-gray-600 mt-12 pt-6 text-center text-gray-500 text-sm mt-6">
+      <div className="border-t border-gray-600 mt-6 pt-6 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} La Valensiana - Todos los derechos
         reservados.
       </div>

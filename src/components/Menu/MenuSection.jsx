@@ -57,11 +57,11 @@ const MenuSection = () => {
 
         {/* Platos Filtrados */}
 
-        <div className="flex flex-wrap justify-center gap-8 px-6">
+        <div className="flex flex-wrap justify-center gap-8 pr-12">
           {displayedItems.map((item, index) => (
             <motion.div
               key={index}
-              className="relative mx-8 w-full sm:w-[45%] md:w-[30%] lg:w-[22%] max-w-[18rem] h-96 cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4"
+              className="relative mx-8 w-full sm:w-[45%] md:w-[30%] lg:w-[22%] max-w-[18rem] h-96 cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             >
               <FlipCard
                 key={index}
