@@ -1,49 +1,49 @@
 [
   {
     "nombre": "Paella Valenciana",
-    "imagen": "images/valenciana.jpg",
+    "imagen": "images/valenciana.webp",
     "ingredientes": "Conejo, pollo, costilla, judías verdes, alcachofa y garrofón.",
     "tag": "Arroz"
   },
   {
     "nombre": "Arroz Negro",
-    "imagen": "images/negro.jpg",
+    "imagen": "images/negro.webp",
     "ingredientes": "Sepia en su tinta, tacos de merluza y puntos de alioli.",
     "tag": "Arroz"
   },
   {
     "nombre": "Arroz Pedro Ximénez",
-    "imagen": "images/px.jpg",
+    "imagen": "images/px.webp",
     "ingredientes": "Contramuslo de pollo, costilla, pimiento rojo y Pedro Ximénez.",
     "tag": "Arroz"
   },
   {
     "nombre": "Arroz Imperial",
-    "imagen": "images/imperial.jpg",
+    "imagen": "images/imperial.webp",
     "ingredientes": "Secreto ibérico, Panceta, Higos, Setas variadas, Foie",
     "tag": "Arroz"
   },
   {
     "nombre": "Arroz Mediterráneo",
-    "imagen": "images/mediterraneo.jpg",
+    "imagen": "images/mediterraneo.webp",
     "ingredientes": "Fumet de pescado, Galeras, Chipirones, Alcachofa",
     "tag": "Arroz"
   },
   {
     "nombre": "Arroz Mar y Fuego",
-    "imagen": "images/marfuego.jpg",
+    "imagen": "images/marfuego.webp",
     "ingredientes": "Pulpo, Sepia, Emperador, Sobrasada ibérica",
     "tag": "Arroz"
   },
   {
     "nombre": "Croquetas",
-    "imagen": "images/croquetas.jpg",
+    "imagen": "images/croquetas.webp",
     "ingredientes": "Croquetas de Jamón Ibérico",
     "tag": "Entrante"
   },
   {
     "nombre": "Entrante",
-    "imagen": "images/entrante.jpg",
+    "imagen": "images/entrante.webp",
     "ingredientes": "Salchichas",
     "tag": "Entrante"
   }

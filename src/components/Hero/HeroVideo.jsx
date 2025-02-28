@@ -52,7 +52,7 @@ const HeroMinimal = () => {
         muted
         playsInline
         preload="metadata"
-        poster="images/hero-placeholder.jpg"
+        poster="images/hero-placeholder.webp"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ y: useTransform(scrollY, [0, 300], [0, 30]) }} // Parallax en el video
       >
@@ -65,7 +65,7 @@ const HeroMinimal = () => {
 
       {/* Humo animado con Framer Motion */}
       <motion.img
-        src="images/smoke.png"
+        src="images/smoke.webp"
         alt="Humo"
         className="absolute top-0 left-0 w-full h-screen object-cover opacity-50"
         initial={{ y: -50 }}
@@ -73,7 +73,7 @@ const HeroMinimal = () => {
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.img
-        src="images/smoke2.png"
+        src="images/smoke2.webp"
         alt="Humo"
         className="absolute top-0 left-0 w-full h-screen object-cover opacity-40"
         initial={{ y: 50 }}
