@@ -16,6 +16,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
 import gsap from "gsap";
+import SEO from "./components/Seo";
 
 function App() {
   const gsapRef = useRef(false);
@@ -34,13 +35,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Helmet>
-        <title>La Valensiana - Arroces & Catering</title>
-        <meta
-          name="description"
-          content="Un viaje gastronómico por la auténtica cocina valenciana."
-        />
-      </Helmet>
+      <SEO />
       <Navbar />
       <main>
         <section id="hero">
