@@ -14,3 +14,9 @@ html {
 .kaushan {
   font-family: "Kaushan Script", serif;
 }
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Catering = () => {
   return (
@@ -57,12 +58,19 @@ const Catering = () => {
 
           {/* Botón de CTA */}
           <motion.a
-            href="#contacto"
             className="inline-block mt-8 px-6 py-3 text-lg font-semibold text-white bg-primary rounded-full shadow-md transition-transform duration-300 hover:scale-105"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
-            Solicita Información
+            <Link
+              to="contacto"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="cursor-pointer hover:text-primary transition"
+            >
+              Solicita Información
+            </Link>
           </motion.a>
         </motion.div>
       </div>

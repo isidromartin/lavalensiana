@@ -27,9 +27,38 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start space-y-4">
           <h3 className="text-2xl font-heading font-bold">Síguenos</h3>
           <div className="flex space-x-6 text-3xl">
-            <FaInstagram className="hover:text-primary cursor-pointer transition-transform duration-300 hover:scale-110" />
-            <FaWhatsapp className="hover:text-primary cursor-pointer transition-transform duration-300 hover:scale-110" />
-            <FaEnvelope className="hover:text-primary cursor-pointer transition-transform duration-300 hover:scale-110" />
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/la.valensiana"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="hover:text-primary transition-transform duration-300 hover:scale-110"
+            >
+              <FaInstagram />
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/message/5V5CVVCA2MF6G1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="hover:text-primary transition-transform duration-300 hover:scale-110"
+            >
+              <FaWhatsapp />
+            </a>
+
+            {/* Correo Electrónico */}
+            <a
+              href="mailto:info@lavalensiana.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Correo Electrónico"
+              className="hover:text-primary transition-transform duration-300 hover:scale-110"
+            >
+              <FaEnvelope />
+            </a>
           </div>
         </div>
       </div>
