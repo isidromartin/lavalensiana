@@ -145,7 +145,7 @@ const Contacto = () => {
 
             <motion.button
               type="submit"
-              className="w-full bg-primary text-white py-3 rounded-full font-semibold text-lg shadow-md transition-transform duration-300 hover:scale-105 flex items-center justify-center"
+              className="w-full bg-primary text-gray-800 py-3 rounded-full font-semibold text-lg shadow-md transition-transform duration-300 hover:scale-105 flex items-center justify-center"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >

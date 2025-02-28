@@ -45,7 +45,7 @@ const MenuSection = () => {
               key={index}
               className={`px-4 py-2 rounded-lg text-lg font-semibold transition-all duration-300 ${
                 selectedTag === tag
-                  ? "bg-primary text-white shadow-md"
+                  ? "bg-primary text-gray-800 shadow-md"
                   : "bg-gray-200 text-gray-800 hover:bg-gray-300"
               }`}
               onClick={() => setSelectedTag(tag)}
@@ -77,7 +77,7 @@ const MenuSection = () => {
           <motion.button
             onClick={() => setShowAll(true)}
             // className="mt-20 bg-[#E1C2B3] text-white px-6 py-3 rounded-lg font-semibold text-lg shadow-md transition-all duration-300 hover:scale-105"
-            className="inline-block mt-20 px-6 py-3 text-lg font-semibold text-white bg-primary rounded-full shadow-md transition-transform duration-300 hover:scale-105"
+            className="inline-block mt-20 px-6 py-3 text-lg font-semibold text-gray-800 bg-primary rounded-full shadow-md transition-transform duration-300 hover:scale-105"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >

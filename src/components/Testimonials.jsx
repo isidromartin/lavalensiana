@@ -88,9 +88,9 @@ const Testimonials = () => {
                     </p>
 
                     {/* Nombre del cliente */}
-                    <h4 className="text-xl font-semibold text-gray-900">
+                    <h3 className="text-xl font-semibold text-gray-900">
                       {testimonio.name}
-                    </h4>
+                    </h3>
                   </motion.div>
                 </SwiperSlide>
               ))}

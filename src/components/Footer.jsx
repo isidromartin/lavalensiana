@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E1E1E] text-white py-16 px-6">
+    <footer className="bg-gray-800 text-white py-16 px-6">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
         {/* Columna 1: Logo */}
         <div className="flex justify-center md:justify-start">

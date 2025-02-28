@@ -65,6 +65,8 @@ const FlipCard = ({ image, name, ingredients }) => {
               setFlipped(false);
             }}
             className="absolute top-4 right-4 text-gray-700 hover:text-black"
+            aria-label="Cerrar tarjeta"
+            title="Cerrar tarjeta"
           >
             <FaTimes size={20} />
           </button>

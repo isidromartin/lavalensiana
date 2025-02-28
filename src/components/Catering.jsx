@@ -67,7 +67,7 @@ const Catering = () => {
               smooth={true}
               duration={800}
               offset={-80}
-              className="cursor-pointer hover:text-primary transition"
+              className="cursor-pointer text-gray-800 hover:text-text-gray-800 transition"
             >
               Solicita Información
             </Link>
