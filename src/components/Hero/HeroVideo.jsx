@@ -51,9 +51,12 @@ const HeroMinimal = () => {
         loop
         muted
         playsInline
+        preload="metadata"
+        poster="images/hero-placeholder.jpg"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ y: useTransform(scrollY, [0, 300], [0, 30]) }} // Parallax en el video
       >
+        <source src="/videos/Hero11Edit.webm" type="video/webm" />
         <source src="images/Hero11Edit.mp4" type="video/mp4" />
       </motion.video>
 

@@ -1,14 +1,9 @@
 import { useEffect, useRef } from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import Navbar from "./components/Navbar";
-import HeroCollage from "./components/Hero/HeroCollage";
-import HeroModern from "./components/Hero/HeroModern";
-import HeroImg from "./components/Hero/HeroImg";
 import HeroVideo from "./components/Hero/HeroVideo";
-import About from "./components/About";
 import About2 from "./components/About2";
-import Menu from "./components/Menu/Menu";
-import Menu2 from "./components/Menu/Menu2";
 import MenuSection from "./components/Menu/MenuSection";
 import Catering from "./components/Catering";
 import Testimonials from "./components/Testimonials";
@@ -35,67 +30,87 @@ function App() {
 
   return (
     <HelmetProvider>
-      <SEO />
-      <Navbar />
-      <main>
-        <section id="hero">
-          <HeroVideo />
-        </section>
-        <section id="about">
-          <About2 />
-        </section>
-        <div className="absolute w-full flex items-center justify-center z-40">
-          <div className="border-t border-gray-400 w-1/4"></div>
-          <img
-            src="images/lgR.png"
-            alt="Logo Divisor"
-            className="h-12 mx-4 bg-transparent"
-          />
-          <div className="border-t border-gray-400 w-1/4"></div>
-        </div>
-        <section id="menu">
-          {/* <Menu />
-          <Menu2 /> */}
-          <MenuSection />
-        </section>
-        <div className="absolute w-full flex items-center justify-center z-40">
-          <div className="border-t border-gray-400 w-1/4"></div>
-          <img
-            src="images/lgR.png"
-            alt="Logo Divisor"
-            className="h-12 mx-4 bg-transparent"
-          />
-          <div className="border-t border-gray-400 w-1/4"></div>
-        </div>
-        <section id="catering">
-          <Catering />
-        </section>
-        <div className="absolute w-full flex items-center justify-center z-40">
-          <div className="border-t border-gray-400 w-1/4"></div>
-          <img
-            src="images/lgR.png"
-            alt="Logo Divisor"
-            className="h-12 mx-4 bg-transparent"
-          />
-          <div className="border-t border-gray-400 w-1/4"></div>
-        </div>
-        <section id="testimonials">
-          <Testimonials />
-        </section>
-        <div className="absolute w-full flex items-center justify-center z-40">
-          <div className="border-t border-gray-400 w-1/4"></div>
-          <img
-            src="images/lgR.png"
-            alt="Logo Divisor"
-            className="h-12 mx-4 bg-transparent"
-          />
-          <div className="border-t border-gray-400 w-1/4"></div>
-        </div>
-        <section id="contact">
-          <Contact />
-        </section>
-      </main>
-      <Footer />
+      <Router>
+        <SEO />
+        <Navbar />
+        <main>
+          {/* Hero Section */}
+          <section id="hero">
+            <HeroVideo />
+          </section>
+
+          {/* Sobre Nosotros */}
+          <section id="about">
+            <About2 />
+          </section>
+
+          {/* Divisor con logo */}
+          <div className="absolute w-full flex items-center justify-center z-40">
+            <div className="border-t border-gray-400 w-1/4"></div>
+            <img
+              src="images/lgR.png"
+              alt="Logo Divisor"
+              className="h-12 mx-4 bg-transparent"
+            />
+            <div className="border-t border-gray-400 w-1/4"></div>
+          </div>
+
+          {/* Menú */}
+          <section id="menu">
+            <MenuSection />
+          </section>
+
+          {/* Divisor con logo */}
+          <div className="absolute w-full flex items-center justify-center z-40">
+            <div className="border-t border-gray-400 w-1/4"></div>
+            <img
+              src="images/lgR.png"
+              alt="Logo Divisor"
+              className="h-12 mx-4 bg-transparent"
+            />
+            <div className="border-t border-gray-400 w-1/4"></div>
+          </div>
+
+          {/* Catering */}
+          <section id="catering">
+            <Catering />
+          </section>
+
+          {/* Divisor con logo */}
+          <div className="absolute w-full flex items-center justify-center z-40">
+            <div className="border-t border-gray-400 w-1/4"></div>
+            <img
+              src="images/lgR.png"
+              alt="Logo Divisor"
+              className="h-12 mx-4 bg-transparent"
+            />
+            <div className="border-t border-gray-400 w-1/4"></div>
+          </div>
+
+          {/* Opiniones de Clientes */}
+          <section id="testimonials">
+            <Testimonials />
+          </section>
+
+          {/* Divisor con logo */}
+          <div className="absolute w-full flex items-center justify-center z-40">
+            <div className="border-t border-gray-400 w-1/4"></div>
+            <img
+              src="images/lgR.png"
+              alt="Logo Divisor"
+              className="h-12 mx-4 bg-transparent"
+            />
+            <div className="border-t border-gray-400 w-1/4"></div>
+          </div>
+
+          {/* Contacto */}
+          <section id="contact">
+            <Contact />
+          </section>
+        </main>
+
+        <Footer />
+      </Router>
     </HelmetProvider>
   );
 }
