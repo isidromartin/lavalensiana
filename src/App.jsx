@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero/Hero";
-// import HeroDefault from "./components/Hero/HeroDefault";
-import HeroMinimal from "./components/Hero/HeroMinimal";
-// import HeroModern from "./components/Hero/HeroModern";
+import HeroCollage from "./components/Hero/HeroCollage";
+import HeroModern from "./components/Hero/HeroModern";
+import HeroImg from "./components/Hero/HeroImg";
+import HeroVideo from "./components/Hero/HeroVideo";
 import About from "./components/About";
 import About2 from "./components/About2";
 import Menu from "./components/Menu/Menu";
@@ -44,7 +44,7 @@ function App() {
       <Navbar />
       <main>
         <section id="hero">
-          <HeroMinimal />
+          <HeroVideo />
         </section>
         <section id="about">
           <About2 />
