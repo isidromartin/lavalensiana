@@ -105,7 +105,7 @@ const Contacto = () => {
 
           <form className="space-y-6" ref={form} onSubmit={sendEmail}>
             <div>
-              <label className="block text-gray-700 font-medium">
+              <label htmlFor="name" className="block text-gray-700 font-medium">
                 Nombre *
               </label>
               <input
@@ -113,32 +113,44 @@ const Contacto = () => {
                 type="text"
                 name="name"
                 placeholder="Tu Nombre"
+                autoComplete="name"
+                id="name"
                 className="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none"
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium">
+              <label
+                htmlFor="email"
+                className="block text-gray-700 font-medium"
+              >
                 Correo Electrónico *
               </label>
               <input
                 required
                 type="email"
                 name="email"
+                id="email"
                 placeholder="ejemplo@email.com"
+                autoComplete="email"
                 className="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none"
               />
             </div>
 
             <div>
-              <label className="block text-gray-700 font-medium">
+              <label
+                htmlFor="message"
+                className="block text-gray-700 font-medium"
+              >
                 Mensaje *
               </label>
               <textarea
                 required
                 name="message"
+                id="message"
                 placeholder="Escribe tu mensaje aquí..."
                 rows="4"
+                autoComplete="off"
                 className="w-full p-3 mt-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:outline-none"
               ></textarea>
             </div>
