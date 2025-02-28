@@ -12,6 +12,8 @@ export default {
       fontFamily: {
         heading: ["Playfair Display", "serif"],
         body: ["Tinos", "serif"],
+        elegant: ["'Alegreya SC'", "serif"],
+        script: ["'Kaushan Script'", "cursive"],
       },
     },
   },
