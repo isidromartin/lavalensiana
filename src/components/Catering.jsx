@@ -61,6 +61,8 @@ const Catering = () => {
             className="inline-block mt-8 px-6 py-3 text-lg font-semibold text-white bg-primary rounded-full shadow-md transition-transform duration-300 hover:scale-105"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
+            as="a"
+            href="/#contacto"
           >
             <Link
               to="contacto"
