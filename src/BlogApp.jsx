@@ -11,7 +11,7 @@ const BlogPost = lazy(() => import("./pages/BlogPost"));
 function BlogApp() {
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/blog">
         <SEO />
         <Suspense fallback={<Loader />}>
           <Routes>
