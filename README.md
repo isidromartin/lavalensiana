@@ -1,8 +1,11 @@
-# React + Vite
+# 🍽️ La Valensiana Arroces & Catering
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![La Valensiana Banner](https://isidromartin.github.io/lavalensiana/images/hero.png)
 
-Currently, two official plugins are available:
+> 🌾 **Auténticos arroces y catering gourmet** | Tradición y calidad en cada bocado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📞 Contacto
+
+📧 **Email**: contacto@lavalensiana.com  
+🌐 **Web**: [www.lavalensiana.com](https://www.lavalensiana.com)  
+📷 **Instagram**: [@lavalensiana](https://instagram.com/lavalensiana)
