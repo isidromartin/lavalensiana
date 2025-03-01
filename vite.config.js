@@ -5,4 +5,12 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   base: "/lavalensiana/",
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: {
+        main: "index.html",
+        blog: "blog.html",
+      },
+    },
+  },
 });
