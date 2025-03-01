@@ -13,4 +13,7 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    historyApiFallback: true, // Habilita el modo SPA para desarrollo local
+  },
 });
