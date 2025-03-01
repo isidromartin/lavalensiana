@@ -33,7 +33,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Router basename="/lavalensiana">
+      <Router>
         <SEO />
         <Suspense
           fallback={
