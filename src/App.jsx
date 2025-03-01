@@ -1,5 +1,5 @@
 import { useEffect, useRef, lazy, Suspense } from "react";
-import { HashRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import gsap from "gsap";
@@ -9,11 +9,11 @@ import Loader from "./components/Loader";
 // Carga diferida de los componentes
 const Navbar = lazy(() => import("./components/Navbar"));
 const HeroVideo = lazy(() => import("./components/Hero/HeroVideo"));
-const About2 = lazy(() => import("./components/About2"));
-const MenuSection = lazy(() => import("./components/Menu/MenuSection"));
-const Catering = lazy(() => import("./components/Catering"));
-const Testimonials = lazy(() => import("./components/Testimonials"));
-const Contact = lazy(() => import("./components/Contact"));
+const About = lazy(() => import("./pages/About"));
+const MenuSection = lazy(() => import("./pages/Menu/MenuSection"));
+const Catering = lazy(() => import("./pages/Catering"));
+const Testimonials = lazy(() => import("./pages/Testimonials"));
+const Contact = lazy(() => import("./pages/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <Router>
+      <Router basename="/lavalensiana">
         <SEO />
         <Suspense
           fallback={
@@ -51,7 +51,7 @@ function App() {
 
             {/* Sobre Nosotros */}
             <section id="about">
-              <About2 />
+              <About />
             </section>
 
             {/* Divisor con logo */}
@@ -118,7 +118,6 @@ function App() {
               <Contact />
             </section>
           </main>
-
           <Footer />
         </Suspense>
       </Router>

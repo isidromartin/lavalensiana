@@ -16,7 +16,7 @@ const HeroMinimal = () => {
         playsInline
         preload="metadata"
         poster="images/hero-placeholder.webp"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover md:object-right sm:object-right xs:object-right"
         style={{ y: useTransform(scrollY, [0, 300], [0, 30]) }} // Parallax en el video
       >
         <source src="images/Hero11Edit.webm" type="video/webm" />
