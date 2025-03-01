@@ -7,14 +7,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "dist",
-    rollupOptions: {
-      input: {
-        main: "index.html",
-        blog: "blog.html",
-      },
-    },
   },
   server: {
-    historyApiFallback: true, // Habilita el modo SPA para desarrollo local
+    historyApiFallback: true,
   },
 });
