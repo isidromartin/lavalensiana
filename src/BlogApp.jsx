@@ -16,7 +16,7 @@ function BlogApp() {
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<Blog />} />
-            <Route path="/:id" element={<BlogPost />} />
+            <Route path="/post/:id" element={<BlogPost />} />
           </Routes>
         </Suspense>
       </Router>

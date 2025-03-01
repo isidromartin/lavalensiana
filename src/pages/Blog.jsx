@@ -28,7 +28,7 @@ const Blog = () => {
         <div className="grid gap-6">
           {blogPosts.map((post) => (
             <Link
-              to={`/${post.id}`}
+              to={`/post/${post.id}`}
               key={post.id}
               className="block border p-4 rounded-lg shadow-md hover:shadow-lg transition"
             >
