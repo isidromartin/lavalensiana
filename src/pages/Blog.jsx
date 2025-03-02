@@ -1,12 +1,8 @@
 import { Link } from "react-router-dom";
 import { blogPosts } from "../data/blogPosts";
-import { useEffect } from "react";
 import NavbarBlog from "../components/NavbarBlog";
 
 const Blog = () => {
-  useEffect(() => {
-    console.log("✅ Blog.jsx se ha renderizado");
-  }, []);
   return (
     <section id="blog">
       <NavbarBlog />

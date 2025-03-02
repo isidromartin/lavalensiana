@@ -18,9 +18,7 @@ function BlogApp() {
         <SEO />
         <Suspense fallback={<Loader />}>
           <Routes>
-            {console.log("Ruta / cargada en BlogApp")}
             <Route path="/" element={<Blog />} />
-            {console.log("Ruta /post/:id cargada en BlogApp")}
             <Route path="/post/:id" element={<BlogPost />} />
           </Routes>
         </Suspense>
