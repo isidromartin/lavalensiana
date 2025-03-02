@@ -14,6 +14,7 @@ export default {
         body: ["Tinos", "serif"],
         elegant: ["'Alegreya SC'", "serif"],
         script: ["'Kaushan Script'", "cursive"],
+        cookies: ["Inter", "sans-serif"],
       },
     },
   },

@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 import "./index.css";
 import Loader from "./components/Loader";
 import SEO from "./components/Seo";
+import Cookies from "./components/cookies";
 
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -24,6 +25,7 @@ function BlogApp() {
         </Suspense>
         <Analytics />
         <SpeedInsights />
+        <Cookies />
       </Router>
     </HelmetProvider>
   );

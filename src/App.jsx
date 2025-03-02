@@ -2,9 +2,9 @@ import { useEffect, useRef, lazy, Suspense } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
-import gsap from "gsap";
 import SEO from "./components/Seo";
 import Loader from "./components/Loader";
+import Cookies from "./components/cookies";
 
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
@@ -20,20 +20,6 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
-  const gsapRef = useRef(false);
-
-  useEffect(() => {
-    if (!gsapRef.current) {
-      gsapRef.current = true;
-      gsap.from("section", {
-        opacity: 0,
-        y: 50,
-        duration: 0.8,
-        stagger: 0.3,
-      });
-    }
-  }, []);
-
   return (
     <HelmetProvider>
       <Router>
@@ -125,6 +111,7 @@ function App() {
         </Suspense>
         <Analytics />
         <SpeedInsights />
+        <Cookies />
       </Router>
     </HelmetProvider>
   );
