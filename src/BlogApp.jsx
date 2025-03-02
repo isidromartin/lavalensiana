@@ -5,6 +5,9 @@ import "./index.css";
 import Loader from "./components/Loader";
 import SEO from "./components/Seo";
 
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
+
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 
@@ -21,6 +24,8 @@ function BlogApp() {
             <Route path="/post/:id" element={<BlogPost />} />
           </Routes>
         </Suspense>
+        <Analytics />
+        <SpeedInsights />
       </Router>
     </HelmetProvider>
   );

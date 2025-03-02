@@ -6,7 +6,7 @@ import gsap from "gsap";
 import SEO from "./components/Seo";
 import Loader from "./components/Loader";
 
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 import { Analytics } from "@vercel/analytics/react";
 
 // Carga diferida de los componentes
@@ -21,6 +21,10 @@ const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
   const gsapRef = useRef(false);
+
+  useEffect(() => {
+    injectSpeedInsights(); // 🚀 Activar Speed Insights en React con Vite
+  }, []);
 
   useEffect(() => {
     if (!gsapRef.current) {
@@ -124,7 +128,6 @@ function App() {
           <Footer />
         </Suspense>
         <Analytics />
-        <SpeedInsights />
       </Router>
     </HelmetProvider>
   );
