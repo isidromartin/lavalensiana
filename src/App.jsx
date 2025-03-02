@@ -6,6 +6,9 @@ import gsap from "gsap";
 import SEO from "./components/Seo";
 import Loader from "./components/Loader";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+
 // Carga diferida de los componentes
 const Navbar = lazy(() => import("./components/Navbar"));
 const HeroVideo = lazy(() => import("./components/Hero/HeroVideo"));
@@ -120,6 +123,8 @@ function App() {
           </main>
           <Footer />
         </Suspense>
+        <Analytics />
+        <SpeedInsights />
       </Router>
     </HelmetProvider>
   );
