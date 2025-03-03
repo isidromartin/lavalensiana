@@ -7,14 +7,9 @@ const Cookies = () => {
       buttonText="Aceptar"
       declineButtonText="Rechazar"
       enableDeclineButton
-      style={{
-        background: "#091C2A",
-        color: "#fff",
-        border: "1",
-        borderColor: "white",
-      }}
+      style={{ background: "#222", color: "#fff" }}
       contentClasses="font-cookies"
-      buttonStyle={{ background: "#E1C2B3", color: "#000", fontSize: "14px" }}
+      buttonStyle={{ background: "#D4A373", color: "#000", fontSize: "14px" }}
       buttonClasses="font-cookies"
       declineButtonClasses="font-cookies"
       declineButtonStyle={{
