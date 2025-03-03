@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import sitemap from "vite-plugin-sitemap";
 
 import fs from "fs";
 import path from "path";
@@ -10,13 +9,7 @@ const robotsContent = `User-agent: *\nAllow: /\nSitemap: https://lavalensiana.co
 // https://vite.dev/config/
 export default defineConfig({
   base: "/",
-  plugins: [
-    react(),
-    sitemap({
-      hostname: "https://lavalensiana.com",
-      robotsTxt: true,
-    }),
-  ],
+  plugins: [react()],
   build: {
     outDir: "dist",
     rollupOptions: {
