@@ -14,7 +14,7 @@ export default defineConfig({
     react(),
     sitemap({
       hostname: "https://lavalensiana.com",
-      robotsTxt: false,
+      robotsTxt: true,
     }),
   ],
   build: {
