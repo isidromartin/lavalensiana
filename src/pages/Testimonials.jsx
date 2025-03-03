@@ -65,7 +65,7 @@ const Testimonials = () => {
 
         {/* Manejo de Errores y Carga */}
         {loading && (
-          <p className="text-lg text-gray-700 mt-6">Cargando testimonios...</p>
+          <p className="text-lg text-gray-700 mt-6">Cargando opiniones...</p>
         )}
         {error && <p className="text-lg text-red-600 mt-6">{error}</p>}
 
@@ -73,25 +73,49 @@ const Testimonials = () => {
         {!loading && !error && reviews.length > 0 && (
           <div className="mt-12">
             {/* Barra de Resumen de Reseñas */}
-            <div className="my-12 bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row justify-between items-center mb-12">
-              <div className="flex items-center space-x-4">
+            <div className="my-12 font-cookies bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row justify-between items-center">
+              {/* Columna Izquierda: Excelente + Puntuación */}
+              <div className="flex flex-col items-center md:items-start">
                 <span className="text-2xl font-semibold text-gray-900">
                   Excelente
                 </span>
-                <span className="text-yellow-500 text-2xl">
-                  ⭐ {rating.toFixed(1)}
-                </span>
-                <span className="text-gray-600">{totalReviews} reseñas</span>
+                <div className="flex space-x-1 mt-1 text-xl font-medium">
+                  {[...Array(5)].map((_, index) => (
+                    <span key={index} className="text-yellow-500 text-2xl">
+                      ⭐
+                    </span>
+                  ))}
+                  <span className="text-2xl pl-2 font-semibold text-gray-800">
+                    {rating.toFixed(1)}
+                  </span>
+                </div>
               </div>
+
+              {/* Columna Central: Logo de Google + Reseñas */}
+              <div className="flex flex-col items-center ml-4 mt-4">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                  alt="Google Logo"
+                  className="w-auto h-12 mb-2"
+                />
+                <span className="text-gray-600 text-lg">
+                  <a href={profileUrl} target="_blank" className="underline">
+                    {totalReviews} reseñas
+                  </a>
+                </span>
+              </div>
+
+              {/* Columna Derecha: Botón */}
               <a
                 href={profileUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 md:mt-0 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
+                className="text-lg mt-4 md:mt-0 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition"
               >
                 Escribe una reseña
               </a>
             </div>
+
             <Swiper
               modules={[Pagination]}
               spaceBetween={30}
@@ -135,7 +159,13 @@ const Testimonials = () => {
                     </h3>
 
                     {/* Calificación en estrellas */}
-                    <p className="text-yellow-500">⭐ {review.starRating}/5</p>
+                    <div className="flex text-yellow-500">
+                      {[...Array(review.starRating)].map((_, index) => (
+                        <span key={index} className="text-lg mx-1">
+                          ⭐
+                        </span>
+                      ))}
+                    </div>
                   </motion.div>
                 </SwiperSlide>
               ))}
