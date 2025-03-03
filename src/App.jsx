@@ -4,7 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import SEO from "./components/Seo";
 import Loader from "./components/Loader";
-import Cookies from "./components/cookies";
+import Cookies from "./components/Cookies";
 
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";

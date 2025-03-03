@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import {
+  BusinessCenter,
+  Celebration,
+  LocalFireDepartment,
+  Spa,
+} from "@mui/icons-material";
 
 const Catering = () => {
   return (
@@ -50,10 +56,30 @@ const Catering = () => {
           </p>
 
           <ul className="mt-6 space-y-3 text-lg font-body text-gray-800">
-            <li>🍽️ Eventos corporativos y bodas</li>
-            <li>🎉 Celebraciones privadas</li>
-            <li>🔥 Showcooking en directo</li>
-            <li>🌿 Ingredientes de primera calidad</li>
+            <li className="flex items-center space-x-3">
+              <BusinessCenter className="text-primary" />
+              <span className="hover:text-primary transition duration-300">
+                Eventos corporativos y bodas
+              </span>
+            </li>
+            <li className="flex items-center space-x-3">
+              <Celebration className="text-primary" />
+              <span className="hover:text-primary transition duration-300">
+                Celebraciones privadas
+              </span>
+            </li>
+            <li className="flex items-center space-x-3">
+              <LocalFireDepartment className="text-primary" />
+              <span className="hover:text-primary transition duration-300">
+                Showcooking en directo
+              </span>
+            </li>
+            <li className="flex items-center space-x-3">
+              <Spa className="text-primary" />
+              <span className="hover:text-primary transition duration-300">
+                Ingredientes de primera calidad
+              </span>
+            </li>
           </ul>
 
           {/* Botón de CTA */}
