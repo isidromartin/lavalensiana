@@ -73,7 +73,7 @@ const Testimonials = () => {
         {!loading && !error && reviews.length > 0 && (
           <div className="mt-12">
             {/* Barra de Resumen de Reseñas */}
-            <div className="my-12 font-cookies bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row justify-between items-center">
+            <div className="my-12 font-cookies bg-white p-6 rounded-xl shadow-lg flex flex-col md:flex-row justify-between items-center">
               {/* Columna Izquierda: Excelente + Puntuación */}
               <div className="flex flex-col items-center md:items-start">
                 <span className="text-2xl font-semibold text-gray-900">
