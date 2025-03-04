@@ -23,9 +23,9 @@ const HeroMinimal = () => {
       </motion.video>
 
       {/* Capa oscura semitransparente para mejorar visibilidad */}
-      <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      <div className="absolute inset-0 bg-white bg-opacity-20"></div>
 
-      {/* Humo animado con Framer Motion */}
+      {/* Humo animado con Framer Motion
       <motion.img
         src="images/smoke.webp"
         alt="Humo"
@@ -41,7 +41,7 @@ const HeroMinimal = () => {
         initial={{ y: 50 }}
         animate={{ y: [0, -15, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-      />
+      /> */}
 
       {/* Contenido con Parallax */}
       <div className="relative z-10">
