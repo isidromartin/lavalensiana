@@ -3,13 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirigiendo...</title>
-    <script type="text/javascript">
-      var path = window.location.pathname.replace("/", "");
-      window.location.replace("/" + path);
-    </script>
+    <title>Página no encontrada</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 50px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        font-size: 48px;
+        color: #333;
+      }
+      p {
+        font-size: 18px;
+        color: #666;
+      }
+      a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        text-decoration: none;
+        background: #007bff;
+        color: white;
+        border-radius: 5px;
+      }
+      a:hover {
+        background: #0056b3;
+      }
+    </style>
   </head>
   <body>
-    <h1>Redirigiendo...</h1>
+    <div class="container">
+      <h1>404</h1>
+      <p>Lo sentimos, la página que buscas no se encuentra disponible.</p>
+      <a href="/">Volver al inicio</a>
+    </div>
   </body>
 </html>
