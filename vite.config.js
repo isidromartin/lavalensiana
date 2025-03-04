@@ -7,6 +7,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "dist",
+    minify: "esbuild",
+    treeshake: true,
     rollupOptions: {
       input: {
         main: "index.html",
