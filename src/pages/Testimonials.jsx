@@ -14,9 +14,9 @@ const Testimonials = () => {
   const [error, setError] = useState(null);
 
   const FEATURABLE_API_URL =
-    "https://featurable.com/api/v1/widgets/8e2d1d9e-98dd-4bdb-b438-66525a48f73b";
+    "https://featurable.com/api/v1/widgets/6ed36ca3-fc60-46de-ad32-3170cc1fc9d7";
 
-  useEffect(() => {
+  https: useEffect(() => {
     const fetchReviews = async () => {
       try {
         const response = await fetch(FEATURABLE_API_URL);
