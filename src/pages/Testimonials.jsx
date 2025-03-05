@@ -98,11 +98,11 @@ const Testimonials = () => {
                   alt="Google Logo"
                   className="w-auto h-12 mb-2"
                 />
-                <span className="text-gray-600 text-lg">
+                {/* <span className="text-gray-600 text-lg">
                   <a href={profileUrl} target="_blank" className="underline">
                     {totalReviews} reseñas
                   </a>
-                </span>
+                </span> */}
               </div>
 
               {/* Columna Derecha: Botón */}

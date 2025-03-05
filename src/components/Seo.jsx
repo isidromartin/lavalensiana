@@ -14,6 +14,11 @@ const SEO = () => {
       addressLocality: "Sevilla",
       addressCountry: "ES",
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "65",
+    },
     geo: {
       "@type": "GeoCoordinates",
       latitude: 37.3891,
