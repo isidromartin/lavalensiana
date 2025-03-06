@@ -19,6 +19,8 @@ const Testimonials = lazy(() => import("./pages/Testimonials"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Footer = lazy(() => import("./components/Footer"));
 
+const Reservas = lazy(() => import("./components/Reservas"));
+
 function App() {
   return (
     <HelmetProvider>
@@ -89,6 +91,22 @@ function App() {
             {/* Opiniones de Clientes */}
             <section id="testimonials">
               <Testimonials />
+            </section>
+
+            {/* Divisor con logo */}
+            <div className="absolute w-full flex items-center justify-center z-40">
+              <div className="border-t border-gray-400 w-1/4"></div>
+              <img
+                src="images/lgR.webp"
+                alt="Logo Divisor"
+                className="h-12 mx-4 bg-transparent"
+              />
+              <div className="border-t border-gray-400 w-1/4"></div>
+            </div>
+
+            {/* Reservas */}
+            <section id="reservas">
+              <Reservas />
             </section>
 
             {/* Divisor con logo */}
