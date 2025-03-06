@@ -8,17 +8,6 @@ const Blog = () => {
       <NavbarBlog />
       <div className="max-w-4xl mx-auto p-6 mt-20">
         <div className="flex flex-col items-center text-center mt-6 mb-8">
-          <h1 className="text-8xl font-bold kaushan leading-none">
-            La Valensiana
-          </h1>
-          <h2 className="text-5xl font-bold italic text-primary ">stories</h2>
-        </div>
-
-        <div className="relative w-full flex items-center justify-center z-40">
-          <div className="border-t border-gray-400 w-full"></div>
-        </div>
-
-        <div className="flex flex-col items-center text-center mt-6 mb-8">
           <h2 className="text-5xl font-bold italic text-primary ">Diario de</h2>
           <h1 className="text-8xl font-bold kaushan leading-none">
             La Valensiana
